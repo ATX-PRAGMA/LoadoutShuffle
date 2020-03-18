@@ -13,7 +13,7 @@ class PrimWeapon : public Weapon {
 		
 	protected:
 		//Init list
-		static const std::string sec_weapon_list[] = {};
+		inline static const std::string sec_weapon_list[] = {};
 		
 };
 

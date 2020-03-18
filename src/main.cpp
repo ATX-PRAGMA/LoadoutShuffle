@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include "generateRandomNumber.h"
+#include "Weapon.h"
+#include "PrimWeapon.h"
+#include "SMG.h"
 
 /* 
 SMG
@@ -58,8 +61,8 @@ Dead Silence, Hardline, Demo Expert, Tactical Mask, Alert, Engineer
 int main() {
 
 	
-	PrimWeapon *Primary = new Primary();
-	SecWeapon *Secondary = new Secondary();
+	PrimWeapon *Primary = new PrimWeapon();
+	//SecWeapon *Secondary = new Secondary();
 	int prim_list_index;
 	std::string test;
 	prim_list_index = ((int) generateRandomNumber(0, (double) Primary->prim_weapon_list_end));

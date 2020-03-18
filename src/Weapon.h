@@ -6,11 +6,9 @@ class Weapon {
 	
 	public:
 		Weapon();
-		
 		virtual void setSights();
 		virtual void setAttachments();
 		
-	protected:
 		
 		//Universal to all Weapon subclass objects
 		std::string weapon_name;
