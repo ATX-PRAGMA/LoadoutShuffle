@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 #include "generateRandomNumber.h"
 
 /* 
@@ -53,10 +53,6 @@ GREEN:
 Hard Wired, Vulture, Toughness, Tracker, Ghost, Cold-Blooded
 BLUE:
 Dead Silence, Hardline, Demo Expert, Tactical Mask, Alert, Engineer
-
-Find a C++ construct that will allow choosing strings by means of numbers
-Perhaps a string array?
-Implement OOP loadout generator
 */
 
 int main() {
@@ -64,6 +60,10 @@ int main() {
 	
 	PrimWeapon *Primary = new Primary();
 	SecWeapon *Secondary = new Secondary();
-	
+	int prim_list_index;
+	std::string test;
+	prim_list_index = ((int) generateRandomNumber(0, (double) Primary->prim_weapon_list_end));
+	test = Primary->prim_weapon_list[prim_list_index];
+	std::cout << test << std::endl;
 	return 0;
 }
