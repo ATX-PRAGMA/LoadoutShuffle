@@ -24,13 +24,13 @@ int main() {
 	//establish which category the randomly selected primary belongs to and cerate the appropriate object
 	if ((prim_list_index >= Primary->smg_bounds[0]) && (prim_list_index <= Primary->smg_bounds[1]))
 	{ SMG *PrimaryWeap = new SMG(); }
-	elseif ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
+	else if ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
 	{ AR *PrimaryWeap = new AR(); }
-	elseif ((prim_list_index >= Primary->sg_bounds[0]) && (prim_list_index <= Primary->sg_bounds[1]))
+	else if ((prim_list_index >= Primary->sg_bounds[0]) && (prim_list_index <= Primary->sg_bounds[1]))
 	{ SG *PrimaryWeap = new SG(); }
-	elseif ((prim_list_index >= Primary->lmg_bounds[0]) && (prim_list_index <= Primary->lmg_bounds[1]))
+	else if ((prim_list_index >= Primary->lmg_bounds[0]) && (prim_list_index <= Primary->lmg_bounds[1]))
 	{ LMG *PrimaryWeap = new LMG(); }
-	elseif ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
+	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
 	{ SR *PrimaryWeap = new SR(); }
 	
 	PrimaryWeap->setSights();
