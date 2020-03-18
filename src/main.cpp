@@ -4,6 +4,10 @@
 #include "Weapon.h"
 #include "PrimWeapon.h"
 #include "SMG.h"
+#include "AR.h"
+#include "SG.h"
+#include "LMG.h"
+#include "SR.h"
 
 /* 
 SMG
