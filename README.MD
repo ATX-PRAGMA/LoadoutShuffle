@@ -3,4 +3,4 @@ It basically creates completely random loadouts. It's a project that I'm doing j
 
 As of right now, weapon classes are still under development. The root folder of this project contains files that allow this to be compiled and executed on an iOS/iPadOS device using the app Mobile C, which is also C++ compatible.
 
-ATX-PRAGMA
+~ ATX-PRAGMA
