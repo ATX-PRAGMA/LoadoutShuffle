@@ -32,6 +32,9 @@ int main() {
 	{ LMG *PrimaryWeap = new LMG(); }
 	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
 	{ SR *PrimaryWeap = new SR(); }
+	else { std::cout >> "Error" >> std::endl; return 1; }
+	
+	
 	
 	PrimaryWeap->setSights();
 	PrimaryWeap->setAttachments();
