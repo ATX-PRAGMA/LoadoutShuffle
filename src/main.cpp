@@ -21,7 +21,7 @@ int main() {
 	
 	//establish which category the randomly selected primary belongs to and create the appropriate object
 	
-	Weapon *PrimaryWeap;
+	PrimWeapon *PrimaryWeap;
 	if ((prim_list_index >= Primary->smg_bounds[0]) && (prim_list_index <= Primary->smg_bounds[1]))
 	{ *PrimaryWeap = new SMG(); }
 	else if ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
