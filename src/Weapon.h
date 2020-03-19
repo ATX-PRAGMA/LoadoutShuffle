@@ -6,8 +6,8 @@ class Weapon {
 	
 	public:
 		Weapon();
-		virtual void setSights();
-		virtual void setAttachments();
+		virtual void setSights() = 0;
+		virtual void setAttachments() = 0;
 		
 		
 		//Universal to all Weapon subclass objects
