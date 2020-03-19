@@ -7,8 +7,8 @@
 class AR : public PrimWeapon {
 	public:
 		AR();
-		virtual void setSights();
-		virtual void setAttachments();
+		void setSights();
+		void setAttachments();
 		
 	private:
 		inline static const std::string ar_list[] = { "AK117", "AK-47", "ASM10", "BK57", "HBRa3", "ICR-1", "KN-44", "LK24", "M16", "M4", "Man-O-War", "Type 25" };

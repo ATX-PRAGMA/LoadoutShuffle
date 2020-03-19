@@ -7,8 +7,8 @@
 class SMG : public PrimWeapon {
 	public:
 		SMG();
-		virtual void setSights();
-		virtual void setAttachments();
+		void setSights();
+		void setAttachments();
 		
 	private:
 		inline static const std::string smg_list[] = {"MSMC", "RUS-79U", "PDW-57/Razorback", "Pharo", "Chicom", "HG 40"};

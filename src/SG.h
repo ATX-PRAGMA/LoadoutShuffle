@@ -7,8 +7,8 @@
 class SG : public PrimWeapon {
 	public:
 		SG();
-		virtual void setSights();
-		virtual void setAttachments();
+		void setSights();
+		void setAttachments();
 		
 	private:
 		inline static const std::string sg_list[] = {"BY15", "HS0405", "HS2126", "KRM-262", "Striker"};

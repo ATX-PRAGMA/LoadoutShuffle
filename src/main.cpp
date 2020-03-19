@@ -12,12 +12,10 @@
 
 
 int main() {
-
 	
 	PrimWeapon *Primary = new PrimWeapon();
 	//SecWeapon *Secondary = new Secondary();
 	int prim_list_index;
-
 	prim_list_index = ((int) generateRandomNumber(0, (double) Primary->prim_weapon_list_end));
 	
 	
@@ -33,8 +31,6 @@ int main() {
 	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
 	{ SR *PrimaryWeap = new SR(); }
 	else { std::cout << "Error" << std::endl; return 1; }
-	
-	
 	
 	PrimaryWeap->setSights();
 	PrimaryWeap->setAttachments();

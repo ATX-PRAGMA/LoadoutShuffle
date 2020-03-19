@@ -7,8 +7,8 @@
 class LMG : public PrimWeapon {
 	public:
 		LMG();
-		virtual void setSights();
-		virtual void setAttachments();
+		void setSights();
+		void setAttachments();
 		
 	private:
 		inline static const std::string lmg_list[] = {"M4LMG", "RPD", "S36", "UL376"};
