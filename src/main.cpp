@@ -20,16 +20,18 @@ int main() {
 	
 	
 	//establish which category the randomly selected primary belongs to and create the appropriate object
+	
+	Weapon *PrimaryWeap;
 	if ((prim_list_index >= Primary->smg_bounds[0]) && (prim_list_index <= Primary->smg_bounds[1]))
-	{ SMG *PrimaryWeap = new SMG(); }
+	{ *PrimaryWeap = new SMG(); }
 	else if ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
-	{ AR *PrimaryWeap = new AR(); }
+	{ *PrimaryWeap = new AR(); }
 	else if ((prim_list_index >= Primary->sg_bounds[0]) && (prim_list_index <= Primary->sg_bounds[1]))
-	{ SG *PrimaryWeap = new SG(); }
+	{ *PrimaryWeap = new SG(); }
 	else if ((prim_list_index >= Primary->lmg_bounds[0]) && (prim_list_index <= Primary->lmg_bounds[1]))
-	{ LMG *PrimaryWeap = new LMG(); }
+	{ *PrimaryWeap = new LMG(); }
 	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
-	{ SR *PrimaryWeap = new SR(); }
+	{ *PrimaryWeap = new SR(); }
 	else { std::cout << "Error" << std::endl; return 1; }
 	
 	PrimaryWeap->setSights();
