@@ -21,17 +21,17 @@ int main() {
 	prim_list_index = ((int) generateRandomNumber(0, (double) Primary->prim_weapon_list_end));
 	
 	
-	//establish which category the randomly selected primary belongs to and cerate the appropriate object
+	//establish which category the randomly selected primary belongs to and create the appropriate object
 	if ((prim_list_index >= Primary->smg_bounds[0]) && (prim_list_index <= Primary->smg_bounds[1]))
-	{ SMG *PrimaryWeap = new SMG(); }
+	{ Weapon *PrimaryWeap = new SMG(); }
 	else if ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
-	{ AR *PrimaryWeap = new AR(); }
+	{ Weapon *PrimaryWeap = new AR(); }
 	else if ((prim_list_index >= Primary->sg_bounds[0]) && (prim_list_index <= Primary->sg_bounds[1]))
-	{ SG *PrimaryWeap = new SG(); }
+	{ Weapon *PrimaryWeap = new SG(); }
 	else if ((prim_list_index >= Primary->lmg_bounds[0]) && (prim_list_index <= Primary->lmg_bounds[1]))
-	{ LMG *PrimaryWeap = new LMG(); }
+	{ Weapon *PrimaryWeap = new LMG(); }
 	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
-	{ SR *PrimaryWeap = new SR(); }
+	{ Weapon *PrimaryWeap = new SR(); }
 	else { std::cout << "Error" << std::endl; return 1; }
 	
 	
