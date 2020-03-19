@@ -23,15 +23,15 @@ int main() {
 	
 	PrimWeapon *PrimaryWeap;
 	if ((prim_list_index >= Primary->smg_bounds[0]) && (prim_list_index <= Primary->smg_bounds[1]))
-	{ *PrimaryWeap = new SMG(); }
+	{ PrimaryWeap = new SMG(); }
 	else if ((prim_list_index >= Primary->ar_bounds[0]) && (prim_list_index <= Primary->ar_bounds[1]))
-	{ *PrimaryWeap = new AR(); }
+	{ PrimaryWeap = new AR(); }
 	else if ((prim_list_index >= Primary->sg_bounds[0]) && (prim_list_index <= Primary->sg_bounds[1]))
-	{ *PrimaryWeap = new SG(); }
+	{ PrimaryWeap = new SG(); }
 	else if ((prim_list_index >= Primary->lmg_bounds[0]) && (prim_list_index <= Primary->lmg_bounds[1]))
-	{ *PrimaryWeap = new LMG(); }
+	{ PrimaryWeap = new LMG(); }
 	else if ((prim_list_index >= Primary->sr_bounds[0]) && (prim_list_index <= Primary->sr_bounds[1]))
-	{ *PrimaryWeap = new SR(); }
+	{ PrimaryWeap = new SR(); }
 	else { std::cout << "Error" << std::endl; return 1; }
 	
 	PrimaryWeap->setSights();
